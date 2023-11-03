@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F4F3F7; /*The bg color is not showing for some reason*/
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #121212;
+}
+
+ul{
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.logo{
+    position: relative;
+    margin-bottom: 0px !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    height: 16px;
+    width: 16px;
+    background-color: #121212;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-bar{
+    display: flex;
+    gap:3.5rem;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap:3.5rem;
+}
+
+.button{
+    padding: 8px 18px;
+    border-radius: 26px;
+    background-color: #279DA8;
+    color: #fff;
+}
+.container{
+    display: flex;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-sm-2{
+    font-size: 15px;
+}
+.col-md-9, .col-md-3{
+    background: #fff;
+    border-radius: 25px;
+    padding: 30px;
+}
+.building-strong-team-row{
+    padding:50px 0px 50px 0px;
+    align-items: center;
+}
+.building-strong-team{
+    font-size: 50px;
+    font-weight:bold;
+}
+.finding-better-options{
+    font-size: 24px;
+}
+.start-now-button{
+    font-size: 18px;
+    padding: 9px 16px;
+    border-radius: 25px;
+    background-color: #279DA8;
+    color: #fff;
+}
+.learn-more{
+    font-size: 12px;
+    padding: 7px 14px;
+    border-radius: 21px;
+    border: 2px solid #121212;
+    color: #121212;
+}
