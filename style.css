@@ -85,8 +85,7 @@ ul{
     padding: 30px;
 }
 .col-xl-3{
-    background: #fff;
-    border-radius: 25px;
+    /* background: #fff; */
     padding: 30px;   
 }
 .building-strong-team-row{
@@ -94,11 +93,11 @@ ul{
     align-items: center;
 }
 .building-strong-team{
-    font-size: 60px;
+    font-size: 50px;
     font-weight:600;
 }
 .finding-better-options{
-    font-size: 24px;
+    font-size: 20px;
 }
 .start-now-button{
     font-size: 18px;
@@ -115,18 +114,23 @@ ul{
     color: #121212;
 }
 .left-side-graph{
-height: 300px;
+height: 200px;
 background-color: #121212;
+border-radius: 25px;
 }
 .right-side-graph{
-    height: 300px;
+    height: 200px;
     background-color: #121212;
-    border-radius: 30px;
+    border-radius: 25px;
     margin-left: 20px;
 }
 .right-side-col{
     margin-left: 20px;
     color: #121212;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #fff;
 }
 .right-side-col-img{
     margin:10px;
@@ -134,9 +138,43 @@ background-color: #121212;
     width:250px;
 }
 .row-with-graph{
-    padding: 50px 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
 }
 #first-img{
     height:20px;
     width:20px;
+}
+#accordian li{
+    list-style: none;
+    width: 300px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+#accordian li label span{
+    transform: rotate(90deg);
+}
+#accordian label + input[type="radio"]{
+    display: none;
+}
+#accordian .content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#review{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#tap-on-menu{
+font-size: 12px;
+font-weight: 500;
 }
